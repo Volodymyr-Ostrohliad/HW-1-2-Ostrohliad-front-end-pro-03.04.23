@@ -1,7 +1,7 @@
-var hours = parseFloat(prompt("Введіть кількість годин"));
+let hours = parseFloat(prompt("Введіть кількість годин"));
 
-var seconds = hours * 3600; 
+let seconds = hours * 3600; 
 
-var resultString = `У ${hours} годинах є ${seconds} секунд`;
+let templateStrings = `У ${hours} годинах є ${seconds} секунд`;
 
-alert(resultString); 
+alert(templateStrings); 
