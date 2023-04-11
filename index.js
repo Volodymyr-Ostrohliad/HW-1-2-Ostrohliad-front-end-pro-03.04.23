@@ -1,7 +1,17 @@
-let hours = parseFloat(prompt("Введіть кількість годин"));
+let a = Number(prompt("Введите первое число"));
+let b = Number(prompt("Введите второе число"));
+let c = Number(prompt("Введите третье число"));
+let d = Number(3)
+console.log(a,b,c);
 
-let seconds = hours * 3600; 
+if (isNaN(a) || isNaN(b) || isNaN(c)) {
+  alert("Ошибка! Введите только числа.");
+} else {
+  const sum = (a + b + c) / d;
+  console.log(sum);}
 
-let templateStrings = `У ${hours} годинах є ${seconds} секунд`;
+const sum = (a + b + c) / d;
+console.log(sum)
 
-alert(templateStrings); 
+let templateStrings = `${a} + ${b} + ${c} / ${d} = ${sum.toFixed(1)}`;
+alert(templateStrings)
