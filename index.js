@@ -1,17 +1,18 @@
-let a = prompt("Введите первое число");
-let b = prompt("Введите второе число");
-let c = prompt("Введите третье число");
-let d = 3;
-console.log(a, b, c);
+let numOrStr = prompt('input number or string');
+console.log(numOrStr)
 
-if (isNaN(a) || isNaN(b) || isNaN(c)) {
-  alert("Ошибка! Введите только числа.");
-} else {
-  a = parseFloat(a);
-  b = parseFloat(b); 
-  c = parseFloat(c); 
-  const sum = (a + b + c) / d;
-  console.log(sum);
-  let templateStrings = `${a} + ${b} + ${c} / ${d} = ${sum.toFixed(1)}`;
-  alert(templateStrings);
+switch (true) {
+  case null:
+  console.log('ви скасували');
+  break;
+  case numOrStr.trim() === '':
+  console.log('Empty String');
+  break;
+  case isNaN( +numOrStr ): 
+  console.log(' number is Ba_NaN');
+  break;
+  default:
+  console.log('OK!')
+  break;
+  
 }
