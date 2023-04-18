@@ -1,3 +1,3 @@
 const array = [1, '', false, undefined, {}, null,];
-array.pop();
+let deleteElelement = (array.pop());
 console.log(array);
