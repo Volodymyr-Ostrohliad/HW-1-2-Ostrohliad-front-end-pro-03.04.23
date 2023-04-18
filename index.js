@@ -8,7 +8,7 @@ if (a === null || a === `` || isNaN(a)) {
 }
 let b = prompt(`Введіть місто, в якому ви живете:`);
 if (b === null || b === ``) {
-  message += `Шкода, що Ви не ввели місто, в якому ви живете.\n`
+  message += `Шкода, що Ви не ввели місто, в якому ви живете.\n`;
 } else {
   function country(city) {
     let country;
@@ -37,13 +37,13 @@ let c = prompt(`Введіть свій улюблений вид спорту:`
 if (c === null || c === ``) {
   message += `Шкода, що Ви не ввели свій улюблений вид спорту.\n`;
 } else {
-  function sport(champions){
+  function sport(champions) {
     let sport;
-    switch(champions) {
-      case `Футбол`: 
+    switch (champions) {
+      case `Футбол`:
         champions = `Пеле`;
         break;
-      case `Баскетбол`: 
+      case `Баскетбол`:
         champions = `Джордан`;
         break;
       case `Автоспорт`:
